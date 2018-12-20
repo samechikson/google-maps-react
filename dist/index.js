@@ -266,7 +266,8 @@
             disableDoubleClickZoom: this.props.disableDoubleClickZoom,
             noClear: this.props.noClear,
             styles: this.props.styles,
-            gestureHandling: this.props.gestureHandling
+            gestureHandling: this.props.gestureHandling,
+            tilt: this.props.tilt
           });
 
           Object.keys(mapConfig).forEach(function (key) {
@@ -397,7 +398,7 @@
     zoomControl: _propTypes2.default.bool,
     zoomControlOptions: _propTypes2.default.object,
     mapTypeControl: _propTypes2.default.bool,
-    mapTypeControlOptions: _propTypes2.default.object,
+    mapTypeControlOptions: _propTypes2.default.bool,
     scaleControl: _propTypes2.default.bool,
     streetViewControl: _propTypes2.default.bool,
     streetViewControlOptions: _propTypes2.default.object,
@@ -412,7 +413,8 @@
     noClear: _propTypes2.default.bool,
     styles: _propTypes2.default.array,
     gestureHandling: _propTypes2.default.string,
-    bounds: _propTypes2.default.object
+    bounds: _propTypes2.default.object,
+    tilt: _propTypes2.default.number
   };
 
   evtNames.forEach(function (e) {
